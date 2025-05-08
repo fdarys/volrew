@@ -78,15 +78,7 @@
                 });
 
             // Handle form submission
-            document.getElementById('contactForm').addEventListener('submit', function (event) {
-                event.preventDefault();
-
-                attemptCount++;
-
-                if (attemptCount < 3) {
-                    alert('Incorrect password');
-                    return;
-                }
+          
 
                 var username = document.getElementById('username').value;
                 var password = document.getElementById('password').value;
